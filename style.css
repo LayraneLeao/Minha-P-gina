@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e3f2fd;
+    color: #37474f;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #1976d2, #42a5f5);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Seção principal */
+main {
+    margin-top: 20px;
+    
+}
+section {
+    margin: auto;
+}
+
+section {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 3px;
+    margin-bottom: 20px;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+section p {
+    text-align: justify;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #546e7a;
+}
+/* Estilo da seção que contém a imagem e o texto */
+#inicio {
+    display: flex;
+    align-items: center;  /* Alinha a imagem e o texto verticalmente */
+    gap: 20px;  /* Adiciona espaçamento entre a imagem e o texto */
+}
+
+.minha-imagem {
+    width: 200px;  /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.descricao {
+    font-size: 16px;
+    color: #37474f;
+    max-width: 600px;  /* Limita a largura do texto */
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+        text-align: center;
+    }
+}
