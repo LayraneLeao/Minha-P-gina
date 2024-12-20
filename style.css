@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e3f2fd;
+    color: #37474f;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #1976d2, #42a5f5);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Seção principal */
+main {
+    margin-top: 20px;
+    
+}
+section {
+    margin: auto;
+}
+
+section {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 3px;
+    margin-bottom: 20px;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+section p {
+    text-align: justify;
+    margin: 0; /* Remove margens automáticas */
+    padding: 0; /* Remove espaçamentos extras */
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #546e7a;
+}
+/* Estilo da seção que contém a imagem e o texto */
+/* Estilo da seção que contém a imagem e o texto */
+#inicio {
+    display: flex;
+    align-items:center; /* Alinha a imagem e o texto no topo */
+    justify-content: space-between; /* Mantém o espaçamento */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    gap: 20px;
+    max-width: 100%; /* Garante que não ultrapasse o container */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.minha-imagem {
+    max-width: 200px; /* Define o tamanho máximo da imagem */
+    width: 200px; /* Define largura fixa */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.descricao {
+    flex: 1; /* Permite que o texto ocupe o restante do espaço disponível */
+    min-width: 300px; /* Define uma largura mínima */
+    text-align: justify; /* Justifica o texto */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #37474f; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin-left: 20px; /* Espaçamento entre imagem e texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #inicio {
+        flex-direction: column; /* Empilha os elementos */
+        align-items: center; /* Centraliza os itens */
+        gap: 15px;
+    }
+
+    .minha-imagem {
+        max-width: 100%; /* Ajusta a largura da imagem */
+        margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+    }
+
+    .descricao {
+        margin-left: 0; /* Remove margem lateral em telas menores */
+        text-align: center; /* Centraliza o texto */
+    }
+}
